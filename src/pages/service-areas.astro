@@ -1,0 +1,71 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL, ADDRESS } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Service Areas | ${SITE_TITLE}`} description="Drain cleaning and sewer services serving Sunnyvale, Mountain View, Cupertino, Santa Clara, Palo Alto, and the greater Silicon Valley area in California." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Service Areas</h1>
+			<p>Proudly serving Sunnyvale and the surrounding Silicon Valley communities.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Where We Work</h2>
+					<p>We are a local company focused on residential and commercial drain cleaning and sewer services throughout Sunnyvale and the greater Silicon Valley region. We understand the unique plumbing challenges of Bay Area homes — older laterals, mature street trees, and high water usage — and we equip our crews accordingly.</p>
+					
+					<h3>Primary Service Areas</h3>
+					<ul>
+						<li><strong>Sunnyvale, CA</strong> — Our home base. Full service for all neighborhoods.</li>
+						<li>Mountain View, CA</li>
+						<li>Cupertino, CA</li>
+						<li>Santa Clara, CA</li>
+						<li>Palo Alto, CA</li>
+						<li>Los Altos & Los Altos Hills</li>
+						<li>Milpitas and nearby towns</li>
+					</ul>
+					
+					<h3>Not Sure If We Cover Your Area?</h3>
+					<p>If you live near Sunnyvale and need drain cleaning, hydro jetting, or a sewer camera inspection, give us a call. We often serve additional nearby communities and will let you know quickly if we can help.</p>
+				</div>
+				<div>
+					<h3>Our Location</h3>
+					<p>{ADDRESS}</p>
+					<div class="map-wrapper mt-2">
+						<iframe
+							src="https://maps.google.com/maps?q=1095+W+Evelyn+Ave+%23104,+Sunnyvale,+CA+94086&t=&z=15&ie=UTF8&iwloc=&output=embed"
+							title="Map showing 1095 W Evelyn Ave #104, Sunnyvale, CA 94086"
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Serving Your Neighborhood</h2>
+			<p>Call today to schedule service in Sunnyvale or nearby communities.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

@@ -1,0 +1,65 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Sewer Line Cleaning Sunnyvale CA | ${SITE_TITLE}`} description="Professional sewer line cleaning and main drain clearing in Sunnyvale, CA. Clear backups, roots, and blockages in your main sewer lateral." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Sewer Line Cleaning in Sunnyvale</h1>
+			<p>Main sewer line clearing for whole-house backups, slow drains, and root problems.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Main Sewer Line Experts</h2>
+					<p>When multiple fixtures drain slowly, toilets gurgle, or sewage backs up, the problem is often in the main sewer lateral that runs from your home to the city sewer or septic system. Our team specializes in locating and clearing these larger lines.</p>
+					<p>Sunnyvale’s mature neighborhoods often have older clay or cast-iron laterals susceptible to root intrusion from street trees and shifting soil. We diagnose the cause and clear the line effectively.</p>
+					
+					<h3>Common Signs You Need Sewer Line Service</h3>
+					<ul>
+						<li>Multiple drains backing up at once</li>
+						<li>Gurgling toilets or sinks</li>
+						<li>Sewage odors indoors or outside</li>
+						<li>Wet spots or lush patches in the yard over the lateral</li>
+						<li>Recurring clogs after basic snaking</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Our Process</h3>
+					<p>We typically begin with a camera inspection when appropriate to identify the exact location and nature of the blockage. Then we use specialized sewer cables or hydro jetting to clear roots, debris, and buildup. After clearing, we can re-inspect to confirm the line is open.</p>
+					
+					<h3>Preventive Care</h3>
+					<p>If roots are a recurring issue, we can discuss long-term solutions including scheduled cleaning or, when necessary, recommendations for repair or replacement of damaged sections.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Request Sewer Line Quote</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Sewer Backup? Act Fast</h2>
+			<p>Call now for main line cleaning in Sunnyvale and nearby cities.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

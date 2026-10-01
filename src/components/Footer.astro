@@ -1,0 +1,32 @@
+---
+import { SITE_TITLE, PHONE, PHONE_TEL, EMAIL, ADDRESS_SHORT } from '../consts';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col">
+				<h4>{SITE_TITLE}</h4>
+				<p>Professional drain cleaning, hydro jetting, and sewer services serving Sunnyvale and the greater Silicon Valley area.</p>
+			</div>
+			<div class="footer-col">
+				<h4>Quick Links</h4>
+				<a href="/services/">Our Services</a>
+				<a href="/services/drain-cleaning/">Drain Cleaning</a>
+				<a href="/services/hydro-jetting/">Hydro Jetting</a>
+				<a href="/service-areas/">Service Areas</a>
+				<a href="/contact/">Contact Us</a>
+			</div>
+			<div class="footer-col">
+				<h4>Contact</h4>
+				<a href={`tel:${PHONE_TEL}`}>{PHONE}</a>
+				<a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+				<p>{ADDRESS_SHORT}</p>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; {year} Drain Cleaning Sunnyvale CA. All rights reserved.</p>
+		</div>
+	</div>
+</footer>

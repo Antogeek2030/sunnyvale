@@ -1,0 +1,65 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Emergency Drain Cleaning Sunnyvale CA | ${SITE_TITLE}`} description="24/7 emergency drain and sewer cleaning in Sunnyvale, CA. Fast response for backups, overflowing toilets, and complete blockages." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Emergency Drain Service in Sunnyvale</h1>
+			<p>Rapid response when a clog or backup can’t wait until morning.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>When You Need Help Right Away</h2>
+					<p>Sewage backups, overflowing toilets, and completely blocked main lines create health risks and property damage. Our emergency team is equipped to respond quickly throughout Sunnyvale and the surrounding Silicon Valley area.</p>
+					<p>We prioritize true emergencies — situations where water or sewage is actively backing up or overflowing — and work to stop the problem and restore drainage as soon as possible.</p>
+					
+					<h3>Emergency Situations We Handle</h3>
+					<ul>
+						<li>Sewage or wastewater backing up into sinks, tubs, or floor drains</li>
+						<li>Overflowing toilets that won’t stop</li>
+						<li>Complete main line blockages affecting the whole house</li>
+						<li>Sudden, severe clogs after heavy use or storms</li>
+						<li>Commercial backups that disrupt business operations</li>
+					</ul>
+				</div>
+				<div>
+					<h3>What to Expect</h3>
+					<p>Call the number on this site and describe the situation. We’ll give you an honest assessment of response time and what we can do on arrival. Our trucks carry professional equipment so most emergency clearances can be completed in a single visit.</p>
+					
+					<h3>After the Emergency</h3>
+					<p>Once the immediate crisis is resolved, we can discuss whether a camera inspection or further cleaning is recommended to reduce the chance of a repeat backup.</p>
+					
+					<div class="mt-2">
+						<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call for Emergency Help</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Don’t Wait — Call Now</h2>
+			<p>Emergency drain and sewer service available for Sunnyvale and nearby cities.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

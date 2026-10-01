@@ -1,0 +1,66 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Cleaning Sunnyvale CA | ${SITE_TITLE}`} description="Professional drain cleaning in Sunnyvale, CA. Clear kitchen sinks, showers, tubs, and floor drains fast with expert snaking and cleaning." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Drain Cleaning in Sunnyvale</h1>
+			<p>Fast, thorough clearing of clogged drains for homes and businesses throughout Silicon Valley.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Expert Drain Cleaning for Sunnyvale Homes</h2>
+					<p>Slow or clogged drains are more than an inconvenience — they can lead to backups, odors, and water damage if ignored. Our technicians use professional-grade equipment to clear blockages safely and effectively.</p>
+					<p>Whether it’s a kitchen sink full of grease, a shower clogged with hair and soap scum, or a laundry drain that won’t empty, we restore proper flow and help prevent the problem from returning.</p>
+					
+					<h3>What We Clean</h3>
+					<ul>
+						<li>Kitchen sink and disposal drains</li>
+						<li>Bathroom sinks, showers, and bathtubs</li>
+						<li>Toilet clogs and near-toilet line issues</li>
+						<li>Laundry and utility sinks</li>
+						<li>Floor drains and garage drains</li>
+						<li>Condo and multi-unit common drains</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Our Approach</h3>
+					<p>We start with a careful assessment to identify the likely cause and location of the clog. Then we select the right tool — flexible cable snaking for most residential clogs or hydro jetting when buildup is severe — so we clear the obstruction without damaging your pipes.</p>
+					
+					<h3>Upfront Pricing</h3>
+					<p>You receive a clear quote before any work begins. No surprises, no pressure. Most standard drain cleaning jobs are completed the same day we arrive.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Request Drain Cleaning Quote</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Clogged Drain? We’re Ready to Help</h2>
+			<p>Call today for same-day drain cleaning in Sunnyvale and nearby cities.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

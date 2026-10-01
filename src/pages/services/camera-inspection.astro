@@ -1,0 +1,66 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Sewer Camera Inspection Sunnyvale CA | ${SITE_TITLE}`} description="Video camera drain and sewer inspection in Sunnyvale, CA. Locate clogs, cracks, roots, and damage with precision before recommending repairs." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Camera Inspection in Sunnyvale</h1>
+			<p>See exactly what’s happening inside your drains and sewer lines with high-resolution video inspection.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Know Before You Dig or Repair</h2>
+					<p>Guessing at the cause of a drain or sewer problem can lead to unnecessary work and expense. A video camera inspection lets us travel the full length of the line, locate the exact issue, and show you the footage so you understand the condition of your plumbing.</p>
+					<p>This is especially valuable in older Sunnyvale and Silicon Valley homes where clay, cast-iron, or Orangeburg laterals may have settled, cracked, or been invaded by roots.</p>
+					
+					<h3>What Camera Inspection Reveals</h3>
+					<ul>
+						<li>Exact location of clogs and blockages</li>
+						<li>Tree root intrusion</li>
+						<li>Cracks, offsets, and collapsed sections</li>
+						<li>Bellies (low spots) that hold water and debris</li>
+						<li>Scale, grease, and debris buildup</li>
+						<li>Condition of joints and pipe material</li>
+					</ul>
+				</div>
+				<div>
+					<h3>When to Get an Inspection</h3>
+					<p>Camera inspections are recommended before buying a home, after repeated clogs, when planning a remodel that affects plumbing, or whenever you want a clear picture of your sewer lateral’s health.</p>
+					
+					<h3>Clear Report & Recommendations</h3>
+					<p>You receive a clear explanation of findings and prioritized recommendations — from simple cleaning to targeted repair options — so you can make an informed decision.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Schedule Camera Inspection</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>See What’s Inside Your Pipes</h2>
+			<p>Call to schedule a video camera inspection in Sunnyvale or nearby communities.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

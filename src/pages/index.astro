@@ -1,0 +1,107 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, PHONE, PHONE_TEL } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`${SITE_TITLE} | Expert Drain & Sewer Services`} description={SITE_DESCRIPTION} />
+</head>
+<body>
+	<Header />
+
+	<section class="hero">
+		<div class="container">
+			<h1>Professional Drain Cleaning in Sunnyvale, CA</h1>
+			<p>
+				Fast, reliable clog removal and sewer line services for Sunnyvale and Silicon Valley homes & businesses.
+				Same-day service available — clear drains, restored flow.
+			</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call Us: {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Get a Free Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="services">
+		<div class="container">
+			<div class="section-header">
+				<h2>Our Core Drain Services</h2>
+				<p>From simple clogs to main sewer line blockages, we restore proper drainage throughout Sunnyvale.</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Professional snaking and clearing of kitchen sinks, bathroom drains, showers, tubs, and floor drains to restore full flow.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Hydro Jetting</h3>
+					<p>High-pressure water jetting that scours pipe walls clean of grease, scale, roots, and stubborn buildup for long-lasting results.</p>
+					<a href="/services/hydro-jetting/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Sewer Line Cleaning</h3>
+					<p>Main sewer line clearing for backups, slow drains throughout the house, or recurring blockages caused by roots or debris.</p>
+					<a href="/services/sewer-line/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Camera Inspection</h3>
+					<p>Video camera inspections to locate the exact source of clogs, cracks, or root intrusion before recommending the right solution.</p>
+					<a href="/services/camera-inspection/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Drain Service</h3>
+					<p>24/7 response for overflowing toilets, sewage backups, and complete blockages when you need help right away.</p>
+					<a href="/services/emergency/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Preventive Maintenance</h3>
+					<p>Scheduled drain cleaning and hydro jetting to keep lines flowing and prevent costly emergency backups.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<div class="section-header">
+				<h2>What Sunnyvale Customers Say</h2>
+				<p>Real feedback from local homeowners and businesses who trusted us with their drains.</p>
+			</div>
+			<div class="testimonials">
+				<div class="testimonial">
+					<blockquote>“Kitchen sink was completely backed up. They arrived same day, hydro-jetted the line, and explained exactly what caused it. Drains have been perfect since.”</blockquote>
+					<cite>— Lisa K., Sunnyvale, CA</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Had a main line backup on a Saturday evening. They came out quickly, cleared the roots, and left everything clean. Highly recommend for emergency service.”</blockquote>
+					<cite>— Raj P., Mountain View, CA</cite>
+				</div>
+				<div class="testimonial">
+					<blockquote>“Camera inspection showed exactly where the problem was. Transparent pricing and professional work. Will call them again for any plumbing needs.”</blockquote>
+					<cite>— Michelle S., Cupertino, CA</cite>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Ready for Fast Drain Relief?</h2>
+			<p>Local, licensed, and insured. Serving Sunnyvale, Mountain View, Cupertino, Santa Clara, and nearby communities.</p>
+			<div class="hero-buttons">
+				<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+				<a href="/contact/" class="btn btn-secondary">Request a Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

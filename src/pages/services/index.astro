@@ -1,0 +1,65 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Drain Cleaning Services | ${SITE_TITLE}`} description="Professional drain cleaning, hydro jetting, sewer line clearing, and camera inspection services in Sunnyvale, CA and surrounding areas." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Our Drain Cleaning Services</h1>
+			<p>Complete drain and sewer solutions for Sunnyvale and Silicon Valley homes and businesses.</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="cards">
+				<div class="card">
+					<h3>Drain Cleaning</h3>
+					<p>Expert clearing of kitchen, bathroom, shower, tub, and laundry drains using professional equipment for lasting results.</p>
+					<a href="/services/drain-cleaning/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Hydro Jetting</h3>
+					<p>High-pressure water jetting that thoroughly cleans pipe interiors of grease, scale, sludge, and roots.</p>
+					<a href="/services/hydro-jetting/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Sewer Line Cleaning</h3>
+					<p>Main sewer line clearing for whole-house backups, slow drains, and root intrusion problems.</p>
+					<a href="/services/sewer-line/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Camera Inspection</h3>
+					<p>Video camera inspections to diagnose the exact cause and location of drain or sewer issues.</p>
+					<a href="/services/camera-inspection/">Learn more →</a>
+				</div>
+				<div class="card">
+					<h3>Emergency Services</h3>
+					<p>Rapid response for overflowing fixtures, sewage backups, and complete blockages — day or night.</p>
+					<a href="/services/emergency/">Learn more →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Need Help Choosing the Right Service?</h2>
+			<p>Call us for a free consultation. We’ll help you decide the best path forward.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

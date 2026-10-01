@@ -1,0 +1,65 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, PHONE, PHONE_TEL } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={`Hydro Jetting Sunnyvale CA | ${SITE_TITLE}`} description="Professional hydro jetting in Sunnyvale, CA. High-pressure water cleaning that removes grease, scale, roots, and buildup from drain and sewer lines." />
+</head>
+<body>
+	<Header />
+
+	<section class="page-hero">
+		<div class="container">
+			<h1>Hydro Jetting in Sunnyvale</h1>
+			<p>Powerful, thorough pipe cleaning that restores full capacity and helps prevent future clogs.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<div class="content-grid">
+				<div>
+					<h2>Why Hydro Jetting?</h2>
+					<p>Traditional snaking punches a hole through a clog. Hydro jetting uses high-pressure water streams to scour the entire interior of the pipe, removing grease, scale, soap residue, and even tree roots. The result is a cleaner line that stays clearer longer.</p>
+					<p>It’s especially effective for restaurant grease lines, older clay or cast-iron sewer laterals common in the Bay Area, and homes with recurring drain problems.</p>
+					
+					<h3>Ideal For</h3>
+					<ul>
+						<li>Stubborn or recurring clogs</li>
+						<li>Grease-heavy kitchen lines</li>
+						<li>Root intrusion in sewer laterals</li>
+						<li>Scale and mineral buildup</li>
+						<li>Preventive maintenance before holidays or rainy season</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Safe for Most Pipes</h3>
+					<p>When performed by trained technicians, hydro jetting is safe for modern PVC, ABS, and properly maintained older pipes. We adjust pressure and nozzle type to match your plumbing and the condition of the line.</p>
+					
+					<h3>Combined with Camera Inspection</h3>
+					<p>We often pair hydro jetting with a pre- and post-cleaning camera inspection so you can see the difference and confirm the line is clear.</p>
+					
+					<div class="mt-2">
+						<a href="/contact/" class="btn btn-primary">Request Hydro Jetting Quote</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>Ready for a Thorough Clean?</h2>
+			<p>Call for hydro jetting service in Sunnyvale and the surrounding Silicon Valley area.</p>
+			<a href={`tel:${PHONE_TEL}`} class="btn btn-primary">Call {PHONE}</a>
+		</div>
+	</section>
+
+	<Footer />
+</body>
+</html>

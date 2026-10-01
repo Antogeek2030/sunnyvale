@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://draincleaningsunnyvaleca.com/sitemap-index.xml
