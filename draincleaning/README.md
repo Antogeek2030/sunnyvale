@@ -20,21 +20,28 @@ Professional drain cleaning, hydro jetting, and sewer line services website buil
 | `npm install` | Install dependencies |
 | `npm run dev` | Start local dev server |
 | `npm run build` | Build production site to `./dist/` |
-| `npm run deploy` | Deploy to Cloudflare |
+| `npm run deploy` | Build + deploy to Cloudflare |
 | `npm run preview` | Preview production build locally |
 
 ## Deploy to Cloudflare Pages
 
-1. Connect the repository to Cloudflare Pages (or use Wrangler).
-2. **Build command:** `npm run build`
-3. **Deploy command / build output:** `npm run deploy` (or set output directory to `dist` in Pages dashboard).
-4. Framework preset: Astro (or None).
+### Recommended settings in Cloudflare Pages dashboard
 
-Alternatively with Wrangler:
+| Setting | Value |
+| --- | --- |
+| **Framework preset** | Astro (or None) |
+| **Build command** | `npm run build` |
+| **Build output directory** | `dist` |
+| **Root directory** | `/` (or leave blank) |
+| **Deploy command** | leave empty (or remove any custom deploy command) |
+
+Do **not** set the deploy command to `npx wrangler deploy` or `npm run deploy` unless you also set the build command to run first. Cloudflare Pages already uploads the contents of the build output directory after a successful build.
+
+### Alternative: deploy via Wrangler CLI
 
 ```bash
-npm run build
-npm run deploy
+npm install
+npm run deploy   # runs astro build && wrangler deploy
 ```
 
 ## Customize
